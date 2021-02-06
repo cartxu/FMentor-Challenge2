@@ -1,0 +1,422 @@
+/* ---------- VARIABLES ------------ */
+
+:root {
+    --primary-pink: hsl(322, 100%, 66%);
+    --light-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grey-blue: hsl(208, 11%, 55%);
+    --color-hover: hsl(322, 100%, 80%);
+    
+}
+
+/* ----------- GENERALES ------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-cyan);
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Reset para REMs - 62.5% = 10px de 16px */    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    
+    
+}
+
+img {
+    max-width: 100%; /*las imagenes no salgan del contenedor*/
+}
+
+/* ------------ TEXTOS Y ESTILOS --------------- */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin: 2.5rem 0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.text {
+    font-size: 1.6rem;
+    color: var(--grey-blue);
+}
+
+.align {
+    text-align: left;
+    width: 80%;
+}
+
+.center {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 1px 4px 10px 0px rgba(168,168,168,0.60);
+}
+
+
+
+/* ---------- BOTONES ---------------- */ 
+
+.btn-light {
+    padding: 1rem 4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn-light:hover {
+    color: var(--grey-blue);
+}
+
+.btn-pink {
+    padding: 1.5rem 5rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    color: #fff;
+    background-color: var(--primary-pink);
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn-pink:hover {
+    background-color: var(--color-hover);
+}
+
+/* ---------- NAVBAR ----------------- */
+
+.navbar {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 2.5rem;
+    margin: 2rem 0;
+}
+
+
+/* ---------- HEADER ----------------- */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: var(--light-cyan);
+
+}
+
+.header-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-header {
+    width: 40%;
+    margin: 2rem 0;
+    align-self: center;
+}
+
+.txt-container {
+    width: 50%;
+    align-self: center;
+    
+}
+
+
+
+/* ---------- CUERPO ------------ */
+
+.cuerpo {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    
+
+}
+
+.container {
+    margin: 3rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 2rem;
+    width: 80%;
+   
+}
+
+.img-content {
+    width: 35%;
+    padding: 3rem;
+}
+
+/* ----------- Mensaje flotante ------ */
+
+.float {
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: -10rem;
+    background-color: #fff;
+}
+
+.float button {
+    align-self: center;
+   
+}
+
+/* ----------- Footer ----------- */
+
+.footer {
+    width: 100%;
+    background-color: var(--dark-cyan);
+    color: var(--light-cyan);
+    padding-top: 12rem;
+    z-index: -100;
+    position: absolute;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content a {
+    color: var(--light-cyan);
+    font-size: 1.4rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content i {
+    color: var(--light-cyan);
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid var(--light-cyan);
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.footer-content i:hover {
+    color: var(--color-hover);
+    border: 1px solid var(--color-hover);
+}
+
+.footer-logo {
+    margin: 2rem 6rem;
+    max-width: 20rem;;
+}
+
+.footer-content {
+    display: flex;
+
+}
+
+.footer-section1 {
+    width: 40%;
+    margin: 2rem 5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.row img {
+    height: 1.6rem;
+    margin: 0 2rem;
+   
+}
+
+.txt-footer {
+    color: var(--light-cyan);
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.footer-section2 {
+    width: 20%;
+    margin: 2rem;
+}
+
+.footer-copy p, a {
+    color: var(--light-cyan);
+    font-size: 1.2rem;
+    text-align: right;
+   
+}
+
+.footer-copy {
+    margin: 1rem;
+}
+
+/* ------MEDIA QUERY ---------*/
+
+@media screen and (max-width:768px) {
+
+    .navbar {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        height: 1.7rem;
+        margin: 2rem 0;
+    }
+
+    .btn-light {
+        margin: 0rem 1rem;
+        padding: 0.5rem 3rem;
+    }
+    
+
+    .btn-pink {
+        display: flex;
+        justify-self: center;
+        margin: 3rem auto;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+
+    header {
+        height: 100%;
+        background-image: url(images/bg-hero-mobile.svg);
+    }
+
+    .header-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .txt-container {
+        width: 85%;
+     
+       
+    }
+    
+    .img-header {
+        width: 80%;
+        margin: 2rem 0;
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+       
+    }
+
+    .container:nth-child(2) {
+        flex-direction: column;
+    }
+
+    
+    .img-content {
+        width: 95%;
+        padding: 3rem;
+    }
+
+    .align {
+        text-align: center;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    .float {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin: 0.5rem;
+    }
+
+    .footer-section1 {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .txt-footer {
+        width: 80%;
+    }
+
+    .footer-section2 {
+        width: 100%;
+        
+    }
+
+    .footer-section2:nth-child(4) {
+        text-align: center;
+    }
+
+
+}
